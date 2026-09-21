@@ -15,7 +15,7 @@ Prefix is **Ctrl-a**. Press Ctrl-a, release, then the action key. Press **Ctrl-a
 | --- | --- |
 | Prefix | `Ctrl-a` |
 | Next / previous tab | `Shift-Right` / `Shift-Left` |
-| Rename current tab | `Ctrl-a` then `Shift-c` |
+| Rename current tab | `Ctrl-a` then `,` |
 | Spaces picker | `Cmd-e` |
 | Spaces picker (fallback) | `Ctrl-Alt-w` |
 | Spaces picker (prefix) | `Ctrl-a` then `w` |
@@ -27,7 +27,7 @@ Herdr defaults still apply for everything else (splits, zoom, detach, sidebar, n
 
 After `Cmd-e`, `j`/`k` move the space list (arrows still work). These keys only apply in the picker; they do not steal typing in a pane.
 
-Bare `Shift-c` is the letter `C`, so rename has to go through the prefix.
+Rename is `Ctrl-a` then `,`. `Ctrl-a` then `Shift-t` still works too.
 
 ## Install
 

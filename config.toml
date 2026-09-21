@@ -21,22 +21,22 @@ prefix = "ctrl+a"
 previous_tab = ["shift+left", "prefix+p"]
 next_tab = ["shift+right", "prefix+n"]
 
-# Rename the current tab. Bare Shift+c is the letter C, so this is
-# prefix then Shift-c. prefix+shift+t is Herdr's default, kept as a spare.
-rename_tab = ["prefix+shift+c", "prefix+shift+t"]
+# Rename the current tab. prefix+shift+t is Herdr's default, kept as a spare.
+rename_tab = ["prefix+comma", "prefix+shift+t"]
 
 # Spaces picker. cmd+e is one chord; the outer terminal must not swallow it.
 # Fallbacks: ctrl+alt+w, prefix+w.
 workspace_picker = ["cmd+e", "ctrl+alt+w", "prefix+w"]
 
 # Inside the picker only (does not steal keys from the pane).
-# Spaces are a vertical list: j/k (and arrows). Pane grid, if any, is ctrl+hjkl.
+# Spaces are a vertical list: j/k (and arrows).
+# Unbind pane hjkl so those keys are not split with the space list.
 navigate_workspace_up = ["k", "up"]
 navigate_workspace_down = ["j", "down"]
-navigate_pane_left = "ctrl+h"
-navigate_pane_down = "ctrl+j"
-navigate_pane_up = "ctrl+k"
-navigate_pane_right = "ctrl+l"
+navigate_pane_left = ""
+navigate_pane_down = ""
+navigate_pane_up = ""
+navigate_pane_right = ""
 
 [ui.toast]
 delivery = "herdr"
