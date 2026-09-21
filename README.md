@@ -20,13 +20,12 @@ Prefix is **Ctrl-a**. Press Ctrl-a, release, then the action key. Press **Ctrl-a
 | Spaces picker (fallback) | `Ctrl-Alt-w` |
 | Spaces picker (prefix) | `Ctrl-a` then `w` |
 | In the picker: next / previous space | `j` / `k` |
-| In the picker: pane left / right | `h` / `l` |
 
 Herdr defaults still apply for everything else (splits, zoom, detach, sidebar, new workspace, …).
 
 `Cmd-e` only works if the outer terminal forwards Command to Herdr. Many terminals bind Command+e themselves. If the picker does not open, free that chord in the terminal, or use `Ctrl-Alt-w`.
 
-After `Cmd-e`, `j`/`k` move the space list (arrows still work). `h`/`l` move between panes. These keys only apply in the picker; they do not steal typing in a pane.
+After `Cmd-e`, `j`/`k` move the space list (arrows still work). These keys only apply in the picker; they do not steal typing in a pane.
 
 Bare `Shift-c` is the letter `C`, so rename has to go through the prefix.
 
