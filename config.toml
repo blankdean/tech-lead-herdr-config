@@ -29,5 +29,14 @@ rename_tab = ["prefix+shift+c", "prefix+shift+t"]
 # Fallbacks: ctrl+alt+w, prefix+w.
 workspace_picker = ["cmd+e", "ctrl+alt+w", "prefix+w"]
 
+# Inside the picker only (does not steal keys from the pane).
+# j/k move the space list. h/l move panes. Arrows still work.
+navigate_workspace_up = ["k", "up"]
+navigate_workspace_down = ["j", "down"]
+navigate_pane_left = "h"
+navigate_pane_down = "ctrl+j"
+navigate_pane_up = "ctrl+k"
+navigate_pane_right = "l"
+
 [ui.toast]
 delivery = "herdr"
