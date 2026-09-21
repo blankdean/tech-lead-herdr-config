@@ -1,4 +1,4 @@
-# herdr-config
+# tech-lead-herdr-config
 
 Opinionated [Herdr](https://herdr.dev) config: a Ctrl-a prefix, Shift-arrows for tabs, and a one-chord spaces picker.
 
@@ -41,14 +41,14 @@ curl -fsSL https://herdr.dev/install.sh | sh
 Then install this config:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/blankdean/herdr-config/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/blankdean/tech-lead-herdr-config/main/install.sh | bash
 ```
 
 Or clone and run it yourself:
 
 ```sh
-git clone https://github.com/blankdean/herdr-config
-cd herdr-config
+git clone https://github.com/blankdean/tech-lead-herdr-config
+cd tech-lead-herdr-config
 ./install.sh
 ```
 

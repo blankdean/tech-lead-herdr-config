@@ -3,7 +3,7 @@
 # Safe to re-run. Backs up an existing config.toml first.
 set -euo pipefail
 
-REPO="https://github.com/blankdean/herdr-config"
+REPO="https://github.com/blankdean/tech-lead-herdr-config"
 HERDR_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/herdr"
 DEST="${HERDR_CONFIG_PATH:-$HERDR_DIR/config.toml}"
 LINK=0
@@ -47,10 +47,10 @@ if [ -f "${BASH_SOURCE[0]:-}" ]; then
     ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 fi
 if [ ! -f "${ROOT}/config.toml" ]; then
-    TMP="$(mktemp -d "${TMPDIR:-/tmp}/herdr-config.XXXXXX")"
+    TMP="$(mktemp -d "${TMPDIR:-/tmp}/tech-lead-herdr-config.XXXXXX")"
     bold "Cloning ${REPO}"
-    git clone --depth 1 "$REPO" "$TMP/herdr-config"
-    ROOT="$TMP/herdr-config"
+    git clone --depth 1 "$REPO" "$TMP/tech-lead-herdr-config"
+    ROOT="$TMP/tech-lead-herdr-config"
 fi
 SRC="${ROOT}/config.toml"
 
