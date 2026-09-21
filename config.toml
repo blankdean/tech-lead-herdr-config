@@ -1,0 +1,33 @@
+# Opinionated Herdr config.
+# Mouse still works for panes, tabs, the sidebar, splits, and copy.
+
+onboarding = false
+
+[theme]
+name = "catppuccin"
+
+[ui]
+tab_bar_right = [
+  { type = "zoom" },
+  { type = "hostname" },
+  { type = "datetime", format = "%Y-%m-%d %H:%M" },
+]
+tab_bar_right_separator = " | "
+
+[keys]
+prefix = "ctrl+a"
+
+# Tabs: Shift-arrows skip the prefix. prefix+p / prefix+n still work.
+previous_tab = ["shift+left", "prefix+p"]
+next_tab = ["shift+right", "prefix+n"]
+
+# Rename the current tab. Bare Shift+c is the letter C, so this is
+# prefix then Shift-c. prefix+shift+t is Herdr's default, kept as a spare.
+rename_tab = ["prefix+shift+c", "prefix+shift+t"]
+
+# Spaces picker. cmd+e is one chord; the outer terminal must not swallow it.
+# Fallbacks: ctrl+alt+w, prefix+w.
+workspace_picker = ["cmd+e", "ctrl+alt+w", "prefix+w"]
+
+[ui.toast]
+delivery = "herdr"
